@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Konversi Nilai Angka ke Huruf</title>
+</head>
+<body>
+  <script>
+
+    let input = prompt("Masukan Nilai :");
+    let nilai = parseInt(input);
+    let grade;
+
+    if (nilai >= 85 && nilai <= 100) {
+      grade = "A";
+    } else if (nilai >= 70 && nilai <= 84) {
+      grade = "B";
+    } else if (nilai >= 55 && nilai <= 69) {
+      grade = "C";
+    } else if (nilai >= 40 && nilai <= 54) {
+      grade = "D";
+    } else if (nilai >= 0 && nilai < 40) {
+      grade = "E";
+    } else {
+      grade = "Input tidak valid";
+    }
+
+    alert("Nilai huruf :" + grade);
+    </script>
+</body>
+</html>
